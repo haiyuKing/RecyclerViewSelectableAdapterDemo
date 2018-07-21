@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 选择图片界面的九宫格item布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/griditemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00C9C9C9"
+    android:layout_margin="5dp">
+
+    <!-- 图片使用src和android:scaleType="centerCrop"、android:adjustViewBounds="true"，可以实现宽高等边 -->
+    <ImageView
+        android:id="@+id/pic_gridimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_img2"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="显示图片"
+        android:layout_margin="2dp"
+        />
+
+    <!-- 选中图标区域 -->
+    <ImageView
+        android:id="@+id/pic_chose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="显示单选框图标"
+        android:scaleType="centerCrop"
+        android:src="@drawable/radio_img_noselect"
+        />
+
+</RelativeLayout>
